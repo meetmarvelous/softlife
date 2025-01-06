@@ -105,7 +105,7 @@
     // Rating
     $("#halfstarsReview").rating({
         "half": true,
-        "color": "#A67D0D",
+        "color": "#FEA116",
         "click": function (e) {
             console.log(e);
             $("#halfstarsInput").val(e.stars);

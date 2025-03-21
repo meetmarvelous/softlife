@@ -1,0 +1,31 @@
+<ul class="list-inline mb-5" id="portfolio-flters">
+  <li class="btn btn-outline-primary active" data-filter="*">All Photos</li>
+  <li class="btn btn-outline-primary" data-filter=".first">Hotel</li>
+  <li class="btn btn-outline-primary" data-filter=".second">Rooms</li>
+  <li class="btn btn-outline-primary" data-filter=".third">Beach</li>
+</ul>
+
+Those sections arent showing pictures under them alone
+
+Note: 
+lib/isotope/isotope.pkgd.min.js exists in the specified path,
+the image paths are correct,
+the js/main.js contain : 
+   // Gallery isotope and filter
+    var portfolioIsotope = $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+    });
+    $('#portfolio-flters li').on('click', function () {
+        $("#portfolio-flters li").removeClass('active');
+        $(this).addClass('active');
+
+        portfolioIsotope.isotope({filter: $(this).data('filter')});
+    });
+
+
+how do I make it works
+
+
+gallery.html  : 
+

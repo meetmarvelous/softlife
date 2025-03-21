@@ -30,3 +30,72 @@ Innovation
 Integrity
 Genuinecare
 Excellence
+______________________________________________
+
+
+Room Categories:
+
+1. Classic
+2. Super Classic
+3. Deluxe
+4. Executive Suites
+
+*Our Facilities:*
+
+- *Bed and Bath:*
+    - Comfortable beds with clean linens
+    - En-suite bathroom with shower and water heater
+    - Toiletries: bathing soap, hair shampoo, body lotion
+- *Technology and Entertainment:*
+    - Flat-screen TV with satellite channels
+    - Free WiFi internet access
+    - Telephones
+- *Food and Beverage:*
+    - Restaurant
+    - Inner bar
+    - Bush bar
+    - Room service
+- *Comfort and Conveniences:*
+    - Air conditioning
+    - Private balcony
+
+- **Comfort & Convenience** – Stay cool with air conditioning and unwind on a private balcony.
+
+- **Restaurant** – Savor delicious local and international dishes in a cozy setting.  
+- **Food & Beverage** – Dine at our restaurant, relax at the bar, or enjoy room service.
+
+ **Entertainment & Connectivity** – Stay connected with free WiFi and enjoy satellite TV. 
+
+- **Swimming Pool** – Take a refreshing dip or lounge by our spacious pool.  
+
+- **Meeting Room** – Hold successful meetings in our well-equipped conference rooms.
+
+- **Quality Facilities** – Enjoy modern amenities designed for your comfort.
+
+
+
+ 
+write the following lines for an hotel  
+
+5678 Reservations
+4321 Check-ins
+8765 Check-outs
+234 Active Bookings
+98% Occupancy Rate
+150 VIP Guests
+75 Conference Rooms
+50+ Amenities
+120 Ongoing Room Services
+24/7 Customer Support
+
+
+ Price Ranges:
+- Classic: ₦25,000
+- Super Classic: ₦28,000
+- Deluxe: ₦32,000
+- Executive Suites: ₦45,000
+
+Classic Room: A cozy and affordable option with essential amenities for a comfortable stay.
+Super Classic Room: Enjoy added comfort with upgraded features and a stylish touch.
+Deluxe Room: Spacious and elegantly furnished, offering a premium experience.
+Executive Suite: A luxurious retreat with top-tier amenities for ultimate relaxation.

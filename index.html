@@ -35,11 +35,18 @@
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
   <style>
+    .center-container {
+      display: flex;
+      justify-content: center;
+    }
+
     .circle {
-  border-radius: 50% !important; /* Makes the element circular */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-  overflow: hidden; /* Hides any part of the image that overflows the circle */
-}
+      max-width: 300px;
+      max-height: 300px;
+      border-radius: 50% !important;
+      object-fit: cover;
+      overflow: hidden;
+    }
   </style>
 </head>
 
@@ -85,7 +92,7 @@
             </div>
           </div>
           <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0"> -->
-            <nav class="navbar navbar-expand-lg bg-white navbar-light p-3 p-lg-0">
+          <nav class="navbar navbar-expand-lg bg-white navbar-light p-3 p-lg-0">
             <a href="" class="navbar-brand d-block d-lg-none">
               <img src="img/logo.svg" alt="SoftLife Logo" class="img-fluid me-2" style="max-height: 40px;">
               <!-- <h1 class="m-0 text-primary text-uppercase">SOFTLIFE</h1> -->
@@ -238,23 +245,24 @@
               <span class="text-primary text-uppercase">SOFTLIFE</span>
             </h1>
             <p class="mb-4">
-              SOFTLIFE Luxury Hotels is nestled amidst the Ibadan city's
-              secure oasis of cultural richness and ancient artifacts,
-              offering a blend of peace, luxury, and personalized service.
+              SOFTLIFE Luxury Hotels is nestled just minutes from Ibadan Airport, our hotel offers the ultimate blend of convenience, comfort, and exceptional service. Whether you’re a business traveler, a tourist exploring the city, or just stopping over, we provide a stress-free stay with easy airport access.
             </p>
             <p class="mb-4">
-              Our esteemed guests gets to enjoy well-furnished relaxation
-              rooms, quality breakfast, a bush-bar including an indoor
-              restaurant & bar, a conference center, gym, free parking, and
-              Wi-Fi – all at affordable rates.
+              Enjoy well-appointed rooms, delicious dining, and top-tier hospitality; all designed to make your experience seamless. No long drives, no hassle; just a warm welcome and a restful stay right where you need it.
             </p>
             <p class="mb-4">
-              The hotel aims to provide a memorable stay, seamlessly
-              integrating modern comfort with the cultural essence of Ibadan
-              City. Join us and discover a harmonious retreat where every
-              moment reflects the charm of our city.
+              Land, relax, and enjoy—your perfect stay starts here!
             </p>
+          </div>
+          <div class="col-lg-6 px-5">
+            <div style="display: flex; justify-content: center;">
+              <img class="img-fluid text-center rounded w-100 wow zoomIn circle" data-wow-delay="0.3s"
+                src="img/logo.PNG" />
+            </div>
+          </div>
+          <div class="col-lg-6">
             <div class="row g-3 pb-4">
+
               <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                 <div class="border rounded p-1">
                   <div class="border rounded text-center p-4">
@@ -264,15 +272,6 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
-                  <div class="border rounded p-1">
-                    <div class="border rounded text-center p-4">
-                      <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
-                      <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                      <p class="mb-0">Staffs</p>
-                    </div>
-                  </div>
-                </div> -->
               <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
                 <div class="border rounded p-1">
                   <div class="border rounded text-center p-4">
@@ -282,923 +281,783 @@
                   </div>
                 </div>
               </div>
+
             </div>
             <a class="btn btn-primary py-3 px-5 mt-2" href="#">Explore More</a>
           </div>
-          <div class="col-lg-6">
-            <div class="row g-3">
-              <div class="col-6 text-end">
-                <img class="img-fluid rounded w-75 wow zoomIn circle" data-wow-delay="0.1s" src="img/squ1.jpg"
-                  style="margin-top: 25%" />
-              </div>
-              <div class="col-6 text-start">
-                <img class="img-fluid rounded w-100 wow zoomIn circle" data-wow-delay="0.3s" src="img/logo.PNG" />
-              </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-    <!-- About End -->
+  </div>
+  <!-- About End -->
 
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="section-title text-center text-primary text-uppercase">
-            About SOFTLIFE
-          </h6>
-          <h1 class="mb-5">
-            Why <span class="text-primary text-uppercase">Choose</span> Us
-          </h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <a class="service-item text-center rounded" href="#">
-              <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
-                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                  <i class="fa fa-eye fa-2x text-primary"></i>
-                </div>
-              </div>
-              <h5 class="mb-3">Vision</h5>
-              <p class="text-body mb-0">
-                To create an ambience that showcases the essence of
-                exceptional hospitality.
-              </p>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-            <a class="service-item text-center rounded" href="#">
-              <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
-                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                  <i class="fa fa-bullseye fa-2x text-primary"></i>
-                </div>
-              </div>
-              <h5 class="mb-3">Mission</h5>
-              <p class="text-body mb-0">
-                Our mission is to fulfill the hospitality needs of our guests,
-                providing a haven of ease, comfort, and tranquility.
-              </p>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <a class="service-item text-center rounded" href="#" style="height: 500px">
-              <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
-                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                  <i class="fa fa-spa fa-2x text-primary"></i>
-                </div>
-              </div>
-              <h5 class="mb-3">Core Values</h5>
-              <p class="text-body mb-0">
-                <b>Integrity: </b>We operate with trustworthiness, kindness,
-                and transparency.
-              </p>
-              <p class="text-body mb-0">
-                <b>Quality: </b>We strive to exceed our guests' expectations,
-                delivering unparalleled service.
-              </p>
-              <p class="text-body mb-0">
-                <b>Friendliness: </b>We foster a welcoming environment, making
-                every guest feel valued.
-              </p>
-              <p class="text-body mb-0">
-                <b>Dependability: </b>We prioritize our guests' needs,
-                ensuring reliability and consistency.
-              </p>
-            </a>
-          </div>
-        </div>
+  <!-- Service Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title text-center text-primary text-uppercase">
+          About SOFTLIFE
+        </h6>
+        <h1 class="mb-5">
+          Why <span class="text-primary text-uppercase">Choose</span> Us
+        </h1>
       </div>
-    </div>
-    <!-- Service End -->
-
-    <!-- Room Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="section-title text-center text-primary text-uppercase">
-            Our Rooms
-          </h6>
-          <h1 class="mb-5">
-            Explore Our <span class="text-primary text-uppercase">Rooms</span>
-          </h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="room-item rounded">
-              <div class="position-relative">
-                <img class="img-fluid" src="img/Classic.png" alt="" />
-                <small
-                  class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦25,000/Night</small>
-              </div>
-              <div class="p-4 mt-2">
-                <div class="d-flex justify-content-between mb-3">
-                  <h5 class="mb-0">Classic Suite</h5>
-                  <div class="ps-2">
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                  </div>
-                </div>
-                <div class="d-flex mb-3">
-                  <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                  <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                  <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                </div>
-                <p class="text-body mb-3">
-                  A cozy and affordable option with essential amenities for a comfortable stay.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#">View Detail</a>
-                  <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#">Book Now</a>
-                </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <a class="service-item text-center rounded" href="#">
+            <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
+              <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                <i class="fa fa-eye fa-2x text-primary"></i>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="room-item rounded">
-              <div class="position-relative">
-                <img class="img-fluid" src="img/SClassic.png" alt="" />
-                <small
-                  class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦28,000/Night</small>
-              </div>
-              <div class="p-4 mt-2">
-                <div class="d-flex justify-content-between mb-3">
-                  <h5 class="mb-0">Super Deluxe Suite</h5>
-                  <div class="ps-2">
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                  </div>
-                </div>
-                <div class="d-flex mb-3">
-                  <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                  <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                  <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                </div>
-                <p class="text-body mb-3">
-                  Enjoy added comfort with upgraded features and a stylish touch.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#">View Detail</a>
-                  <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#">Book Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="room-item rounded">
-              <div class="position-relative">
-                <img class="img-fluid" src="img/Deluxe.png" alt="" />
-                <small
-                  class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦32,000/Night</small>
-              </div>
-              <div class="p-4 mt-2">
-                <div class="d-flex justify-content-between mb-3">
-                  <h5 class="mb-0">Deluxe Suite</h5>
-                  <div class="ps-2">
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                  </div>
-                </div>
-                <div class="d-flex mb-3">
-                  <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                  <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                  <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                </div>
-                <p class="text-body mb-3">
-                  Spacious and elegantly furnished, offering a premium experience.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#">View Detail</a>
-                  <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#">Book Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="room-item rounded">
-              <div class="position-relative">
-                <img class="img-fluid" src="img/Executive.png" alt="" />
-                <small
-                  class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦45,000/Night</small>
-              </div>
-              <div class="p-4 mt-2">
-                <div class="d-flex justify-content-between mb-3">
-                  <h5 class="mb-0">Executive Suite</h5>
-                  <div class="ps-2">
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                    <small class="fa fa-star text-primary"></small>
-                  </div>
-                </div>
-                <div class="d-flex mb-3">
-                  <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                  <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                  <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                </div>
-                <p class="text-body mb-3">
-                  A luxurious retreat with top-tier amenities for ultimate relaxation.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#">View Detail</a>
-                  <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#">Book Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Room End -->
-
-    <!-- Video Start -->
-    <div class="container-xxl py-5 px-0 wow fadeIn" data-wow-delay="0.1s">
-      <div class="row g-0">
-        <div class="col-md-6 bg-dark d-flex align-items-center">
-          <div class="p-5">
-            <h6 class="section-title text-start text-white text-uppercase mb-3">
-              Luxury Living
-            </h6>
-            <h1 class="text-white mb-4">Built For Your Maximum Relaxation</h1>
-            <p class="text-white mb-4">
-              We have designed our hotel to be efficient and responsive to our
-              guests' needs. We take pride in providing top-quality services
-              and amenities.
+            <h5 class="mb-3">Vision</h5>
+            <p class="text-body mb-0">
+              To create an ambience that showcases the essence of
+              exceptional hospitality.
             </p>
-            <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3">Our Rooms</a>
-            <a href="#" class="btn btn-light py-md-3 px-md-5">Book A Room</a>
-          </div>
+          </a>
         </div>
-        <div class="col-md-6">
-          <div class="video">
-            <button type="button" class="btn-play" data-bs-toggle="modal"
-              data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-              <span></span>
-            </button>
-          </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+          <a class="service-item text-center rounded" href="#">
+            <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
+              <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                <i class="fa fa-bullseye fa-2x text-primary"></i>
+              </div>
+            </div>
+            <h5 class="mb-3">Mission</h5>
+            <p class="text-body mb-0">
+              Our mission is to fulfill the hospitality needs of our guests,
+              providing a haven of ease, comfort, and tranquility.
+            </p>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <a class="service-item text-center rounded" href="#" style="height: 500px">
+            <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
+              <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                <i class="fa fa-spa fa-2x text-primary"></i>
+              </div>
+            </div>
+            <h5 class="mb-3">Core Values</h5>
+            <p class="text-body mb-0">
+              <b>Integrity: </b>We operate with trustworthiness, kindness,
+              and transparency.
+            </p>
+            <p class="text-body mb-0">
+              <b>Quality: </b>We strive to exceed our guests' expectations,
+              delivering unparalleled service.
+            </p>
+            <p class="text-body mb-0">
+              <b>Friendliness: </b>We foster a welcoming environment, making
+              every guest feel valued.
+            </p>
+            <p class="text-body mb-0">
+              <b>Dependability: </b>We prioritize our guests' needs,
+              ensuring reliability and consistency.
+            </p>
+          </a>
         </div>
       </div>
     </div>
+  </div>
+  <!-- Service End -->
 
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <!-- Room Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title text-center text-primary text-uppercase">
+          Our Rooms
+        </h6>
+        <h1 class="mb-5">
+          Explore Our <span class="text-primary text-uppercase">Rooms</span>
+        </h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="room-item rounded">
+            <div class="position-relative">
+              <img class="img-fluid" src="img/Classic.png" alt="" />
+              <small
+                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦25,000/Night</small>
+            </div>
+            <div class="p-4 mt-2">
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Classic Suite</h5>
+                <div class="ps-2">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+              </div>
+              <div class="d-flex mb-3">
+                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>24hrs Electricity</small>
+                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+              </div>
+              <p class="text-body mb-3">
+                A cozy and affordable option with essential amenities for a comfortable stay.
+              </p>
+              <div class="d-flex justify-content-between">
+                <!-- <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#">View Detail</a> -->
+                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#">Book Now</a>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">
-            <!-- 16:9 aspect ratio -->
-            <div class="ratio ratio-16x9">
-              <iframe class="embed-responsive-item" src="#" id="video" allowfullscreen allowscriptaccess="always"
-                allow="autoplay"></iframe>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="room-item rounded">
+            <div class="position-relative">
+              <img class="img-fluid" src="img/SClassic.png" alt="" />
+              <small
+                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦28,000/Night</small>
+            </div>
+            <div class="p-4 mt-2">
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Super Deluxe Suite</h5>
+                <div class="ps-2">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+              </div>
+              <div class="d-flex mb-3">
+                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>24hrs Electricity</small>
+                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+              </div>
+              <p class="text-body mb-3">
+                Enjoy added comfort with upgraded features and a stylish touch.
+              </p>
+              <div class="d-flex justify-content-between">
+                <!-- <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#">View Detail</a> -->
+                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="room-item rounded">
+            <div class="position-relative">
+              <img class="img-fluid" src="img/Deluxe.png" alt="" />
+              <small
+                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦32,000/Night</small>
+            </div>
+            <div class="p-4 mt-2">
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Deluxe Suite</h5>
+                <div class="ps-2">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+              </div>
+              <div class="d-flex mb-3">
+                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+              </div>
+              <p class="text-body mb-3">
+                Spacious and elegantly furnished, offering a premium experience.
+              </p>
+              <div class="d-flex justify-content-between">
+                <!-- <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#">View Detail</a> -->
+                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="room-item rounded">
+            <div class="position-relative">
+              <img class="img-fluid" src="img/Executive.png" alt="" />
+              <small
+                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦45,000/Night</small>
+            </div>
+            <div class="p-4 mt-2">
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Executive Suite</h5>
+                <div class="ps-2">
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                  <small class="fa fa-star text-primary"></small>
+                </div>
+              </div>
+              <div class="d-flex mb-3">
+                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>24hrs Electricity</small>
+                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+              </div>
+              <p class="text-body mb-3">
+                A luxurious retreat with top-tier amenities for ultimate relaxation.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#">View Detail</a>
+                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#">Book Now</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Video Start -->
+  </div>
+  <!-- Room End -->
 
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="section-title text-center text-primary text-uppercase">
-            Our Services
+  <!-- Video Start -->
+  <div class="container-xxl py-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="row g-0">
+      <div class="col-md-6 bg-dark d-flex align-items-center">
+        <div class="p-5">
+          <h6 class="section-title text-start text-white text-uppercase mb-3">
+            Luxury Living
           </h6>
-          <h1 class="mb-5">
-            Explore Our
-            <span class="text-primary text-uppercase">Services</span>
-          </h1>
+          <h1 class="text-white mb-4">Built For Your Maximum Relaxation</h1>
+          <p class="text-white mb-4">
+            We have designed our hotel to be efficient and responsive to our
+            guests' needs. We take pride in providing top-quality services
+            and amenities.
+          </p>
+          <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3">Our Rooms</a>
+          <a href="#" class="btn btn-light py-md-3 px-md-5">Book A Room</a>
         </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <a class="service-item text-center rounded" href="#">
-              <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
-                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                  <i class="fa fa-hotel fa-2x text-primary"></i>
-                </div>
-              </div>
-              <h5 class="mb-3">Comfort & Convenience</h5>
-              <p class="text-body mb-0">
-                Stay cool with air conditioning and unwind on a private balcony.
-              </p>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-            <a class="service-item text-center rounded" href="#">
-              <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
-                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                  <i class="fa fa-utensils fa-2x text-primary"></i>
-                </div>
-              </div>
-              <h5 class="mb-3">Food & Beverage</h5>
-              <p class="text-body mb-0">
-                Dine at our restaurant, relax at the bar, or enjoy room service.
-              </p>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <a class="service-item text-center rounded" href="#">
-              <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
-                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                  <i class="fa fa-spa fa-2x text-primary"></i>
-                </div>
-              </div>
-              <h5 class="mb-3">Entertainment & Connectivity</h5>
-              <p class="text-body mb-0">
-                Stay connected with free WiFi and enjoy satellite TV.
-              </p>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-            <a class="service-item text-center rounded" href="#">
-              <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
-                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                  <i class="fa fa-swimmer fa-2x text-primary"></i>
-                </div>
-              </div>
-              <h5 class="mb-3">Swimming Pool</h5>
-              <p class="text-body mb-0">
-                Take a refreshing dip or lounge by our spacious pool.
-              </p>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <a class="service-item text-center rounded" href="#">
-              <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
-                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                  <i class="fa fa-glass-cheers fa-2x text-primary"></i>
-                </div>
-              </div>
-              <h5 class="mb-3">Reception & Meeting Room</h5>
-              <p class="text-body mb-0">
-                Hold successful meetings in our well-equipped conference rooms.
-              </p>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-            <a class="service-item text-center rounded" href="#">
-              <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
-                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                  <i class="fa fa-dumbbell fa-2x text-primary"></i>
-                </div>
-              </div>
-              <h5 class="mb-3">Quality Facilities</h5>
-              <p class="text-body mb-0">
-                Enjoy modern amenities designed for your comfort.
-              </p>
-            </a>
+      </div>
+      <div class="col-md-6">
+        <div class="video">
+          <button type="button" class="btn-play" data-bs-toggle="modal"
+            data-src="https://www.youtube.com/embed/vTnFF0CZhbU" data-bs-target="#videoModal">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- 16:9 aspect ratio -->
+          <div class="ratio ratio-16x9">
+            <iframe class="embed-responsive-item" src="#" id="video" allowfullscreen allowscriptaccess="always"
+              allow="autoplay"></iframe>
           </div>
         </div>
       </div>
     </div>
-    <!-- Service End -->
+  </div>
+  <!-- Video Start -->
 
-    <!-- Testimonial Start -->
-    <!-- <div class="container-xxl testimonial my-5 py-5 bg-dark wow fadeIn" data-wow-delay="0.1s">
-      <div class="container">
-        <div class="owl-carousel testimonial-carousel py-5">
-          <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-            <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est
-              stet ea lorem amet est kasd kasd et erat magna eos</p>
-            <div class="d-flex align-items-center">
-              <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg"
-                style="width: 45px; height: 45px;">
-              <div class="ps-3">
-                <h6 class="fw-bold mb-1">Client Name</h6>
-                <small>Profession</small>
+  <!-- Service Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title text-center text-primary text-uppercase">
+          Our Services
+        </h6>
+        <h1 class="mb-5">
+          Explore Our
+          <span class="text-primary text-uppercase">Services</span>
+        </h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <a class="service-item text-center rounded" href="#">
+            <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
+              <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                <i class="fa fa-hotel fa-2x text-primary"></i>
               </div>
             </div>
-            <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-          </div>
-          <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-            <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est
-              stet ea lorem amet est kasd kasd et erat magna eos</p>
-            <div class="d-flex align-items-center">
-              <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg"
-                style="width: 45px; height: 45px;">
-              <div class="ps-3">
-                <h6 class="fw-bold mb-1">Client Name</h6>
-                <small>Profession</small>
+            <h5 class="mb-3">Comfort & Convenience</h5>
+            <p class="text-body mb-0">
+              Stay cool with air conditioning and unwind on a private balcony.
+            </p>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+          <a class="service-item text-center rounded" href="#">
+            <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
+              <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                <i class="fa fa-utensils fa-2x text-primary"></i>
               </div>
             </div>
-            <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-          </div>
-          <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-            <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est
-              stet ea lorem amet est kasd kasd et erat magna eos</p>
-            <div class="d-flex align-items-center">
-              <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg"
-                style="width: 45px; height: 45px;">
-              <div class="ps-3">
-                <h6 class="fw-bold mb-1">Client Name</h6>
-                <small>Profession</small>
+            <h5 class="mb-3">Food & Beverage</h5>
+            <p class="text-body mb-0">
+              Dine at our restaurant, relax at the bar, or enjoy room service.
+            </p>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <a class="service-item text-center rounded" href="#">
+            <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
+              <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                <i class="fa fa-spa fa-2x text-primary"></i>
               </div>
             </div>
-            <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
-          </div>
+            <h5 class="mb-3">Entertainment & Connectivity</h5>
+            <p class="text-body mb-0">
+              Stay connected with free WiFi and enjoy satellite TV.
+            </p>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+          <a class="service-item text-center rounded" href="#">
+            <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
+              <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                <i class="fa fa-swimmer fa-2x text-primary"></i>
+              </div>
+            </div>
+            <h5 class="mb-3">Swimming Pool</h5>
+            <p class="text-body mb-0">
+              Take a refreshing dip or lounge by our spacious pool.
+            </p>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <a class="service-item text-center rounded" href="#">
+            <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
+              <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                <i class="fa fa-glass-cheers fa-2x text-primary"></i>
+              </div>
+            </div>
+            <h5 class="mb-3">Reception & Meeting Room</h5>
+            <p class="text-body mb-0">
+              Hold successful meetings in our well-equipped conference rooms.
+            </p>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+          <a class="service-item text-center rounded" href="#">
+            <div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
+              <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                <i class="fa fa-dumbbell fa-2x text-primary"></i>
+              </div>
+            </div>
+            <h5 class="mb-3">Quality Facilities</h5>
+            <p class="text-body mb-0">
+              Enjoy modern amenities designed for your comfort.
+            </p>
+          </a>
         </div>
       </div>
-    </div> -->
-    <!-- Testimonial End -->
+    </div>
+  </div>
+  <!-- Service End -->
 
-    <!-- Team Start -->
-    <!-- <div class="container-xxl py-5">
-      <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="section-title text-center text-primary text-uppercase">Our Team</h6>
-          <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Staffs</span></h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item rounded">
-              <div class="position-relative">
-                <img class="img-fluid" src="img/team-1.jpg" alt="">
-                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                  <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                  <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-              </div>
-              <div class="text-center p-4 mt-3">
-                <h5 class="fw-bold mb-0">Full Name</h5>
-                <small>Designation</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="team-item rounded">
-              <div class="position-relative">
-                <img class="img-fluid" src="img/team-2.jpg" alt="">
-                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                  <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                  <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-              </div>
-              <div class="text-center p-4 mt-3">
-                <h5 class="fw-bold mb-0">Full Name</h5>
-                <small>Designation</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="team-item rounded">
-              <div class="position-relative">
-                <img class="img-fluid" src="img/team-3.jpg" alt="">
-                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                  <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                  <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-              </div>
-              <div class="text-center p-4 mt-3">
-                <h5 class="fw-bold mb-0">Full Name</h5>
-                <small>Designation</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="team-item rounded">
-              <div class="position-relative">
-                <img class="img-fluid" src="img/team-4.jpg" alt="">
-                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                  <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                  <a class="btn btn-square btn-primary mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-              </div>
-              <div class="text-center p-4 mt-3">
-                <h5 class="fw-bold mb-0">Full Name</h5>
-                <small>Designation</small>
-              </div>
-            </div>
-          </div>
+  <!-- Gallery Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title text-center text-primary text-uppercase">Gallery</h6>
+        <h1 class="mb-5">Our Photo <span class="text-primary text-uppercase">Gallery</span></h1>
+      </div>
+      <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-12 text-center">
+          <ul class="list-inline mb-5" id="portfolio-flters">
+            <li class="btn btn-outline-primary active" data-filter="*">All Photos</li>
+            <li class="btn btn-outline-primary" data-filter=".first">Hotel</li>
+            <li class="btn btn-outline-primary" data-filter=".second">Rooms</li>
+            <li class="btn btn-outline-primary" data-filter=".third">Bar</li>
+            <li class="btn btn-outline-primary" data-filter=".fourth">Conference Room</li>
+            <li class="btn btn-outline-primary" data-filter=".fifth">Reception</li>
+            <li class="btn btn-outline-primary" data-filter=".sixth">Restaurant</li>
+          </ul>
         </div>
       </div>
-    </div> -->
-    <!-- Team End -->
-
-    <!-- Gallery Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="section-title text-center text-primary text-uppercase">Gallery</h6>
-          <h1 class="mb-5">Our Photo <span class="text-primary text-uppercase">Gallery</span></h1>
-        </div>
-        <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="col-12 text-center">
-            <ul class="list-inline mb-5" id="portfolio-flters">
-              <li class="btn btn-outline-primary active" data-filter="*">All Photos</li>
-              <li class="btn btn-outline-primary" data-filter=".first">Hotel</li>
-              <li class="btn btn-outline-primary" data-filter=".second">Rooms</li>
-              <li class="btn btn-outline-primary" data-filter=".third">Bar</li>
-              <li class="btn btn-outline-primary" data-filter=".fourth">Conference Room</li>
-              <li class="btn btn-outline-primary" data-filter=".fifth">Reception</li>
-              <li class="btn btn-outline-primary" data-filter=".sixth">Restaurant</li>
-            </ul>
+      <div class="row g-4 portfolio-container">
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item first wow slideInUp" data-wow-delay="0.1s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery1.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery1.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
+            </div>
           </div>
         </div>
-        <div class="row g-4 portfolio-container">
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item first wow slideInUp" data-wow-delay="0.1s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery1.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery1.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item first wow slideInUp" data-wow-delay="0.2s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery2.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery2.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item first wow slideInUp" data-wow-delay="0.2s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery2.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery2.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item first wow slideInUp" data-wow-delay="0.3s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery3.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery3.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item first wow slideInUp" data-wow-delay="0.3s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery3.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery3.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item third wow slideInUp" data-wow-delay="0.4s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery4.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery4.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item third wow slideInUp" data-wow-delay="0.4s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery4.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery4.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item third wow slideInUp" data-wow-delay="0.5s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery5.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery5.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item third wow slideInUp" data-wow-delay="0.5s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery5.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery5.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="0.6s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery6.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery6.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="0.6s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery6.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery6.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="0.7s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery7.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery7.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="0.7s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery7.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery7.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="0.8s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery8.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery8.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="0.8s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery8.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery8.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="0.9s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery9.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery9.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="0.9s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery9.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery9.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="1.0s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery10.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery10.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="1.0s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery10.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery10.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="1.1s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery11.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery11.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="1.1s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery11.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery11.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="1.2s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery12.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery12.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="1.2s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery12.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery12.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="1.3s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery13.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery13.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item second wow slideInUp" data-wow-delay="1.3s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery13.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery13.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item fourth wow slideInUp" data-wow-delay="1.4s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery14.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery14.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item fourth wow slideInUp" data-wow-delay="1.4s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery14.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery14.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item fourth wow slideInUp" data-wow-delay="1.5s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery15.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery15.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item fourth wow slideInUp" data-wow-delay="1.5s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery15.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery15.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item fourth wow slideInUp" data-wow-delay="1.6s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery16.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery16.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item fourth wow slideInUp" data-wow-delay="1.6s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery16.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery16.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item sixth wow slideInUp" data-wow-delay="1.7s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery17.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery17.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item sixth wow slideInUp" data-wow-delay="1.7s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery17.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery17.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item sixth wow slideInUp" data-wow-delay="1.8s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery18.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery18.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item sixth wow slideInUp" data-wow-delay="1.8s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery18.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery18.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item sixth wow slideInUp" data-wow-delay="1.9s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery19.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery19.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item sixth wow slideInUp" data-wow-delay="1.9s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery19.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery19.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item fifth wow slideInUp" data-wow-delay="2.0s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery20.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery20.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item fifth wow slideInUp" data-wow-delay="2.0s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery20.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery20.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-6 portfolio-item fifth wow slideInUp" data-wow-delay="2.1s">
-            <div class="position-relative rounded overflow-hidden">
-              <img class="img-fluid" src="img/gallery21.png" alt="">
-              <div class="portfolio-btn">
-                <a class="btn btn-square btn-outline-light" href="img/gallery21.png" data-lightbox="portfolio"><i
-                    class="bi bi-plus"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-6 portfolio-item fifth wow slideInUp" data-wow-delay="2.1s">
+          <div class="position-relative rounded overflow-hidden">
+            <img class="img-fluid" src="img/gallery21.png" alt="">
+            <div class="portfolio-btn">
+              <a class="btn btn-square btn-outline-light" href="img/gallery21.png" data-lightbox="portfolio"><i
+                  class="bi bi-plus"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Gallery End -->
+  </div>
+  <!-- Gallery End -->
 
-    <!-- Blog Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="section-title text-center text-primary text-uppercase">
-            Blog Post
-          </h6>
-          <h1 class="mb-5">
-            Latest From <span class="text-primary text-uppercase">Blog</span>
-          </h1>
+  <!-- Blog Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title text-center text-primary text-uppercase">
+          Blog Post
+        </h6>
+        <h1 class="mb-5">
+          Latest From <span class="text-primary text-uppercase">Blog</span>
+        </h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="blog-item rounded">
+            <div class="overflow-hidden">
+              <img class="img-fluid" src="img/blog-1.jpg" alt="" />
+            </div>
+            <div class="p-4">
+              <div class="d-flex mx-n2 mb-3">
+                <small class="mx-2"><i class="fa fa-user-alt text-primary me-2"></i>John
+                  Doe</small>
+                <small class="mx-2"><i class="fa fa-calendar-alt text-primary me-2"></i>01
+                  Jan 2025</small>
+              </div>
+              <h5 class="lh-base mb-3">
+                Affordable Luxury Suites At SOFTLIFE Luxury Hotel
+              </h5>
+              <a href="#" class="fw-medium text-uppercase">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="blog-item rounded">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/blog-1.jpg" alt="" />
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="blog-item rounded">
+            <div class="overflow-hidden">
+              <img class="img-fluid" src="img/blog-2.jpg" alt="" />
+            </div>
+            <div class="p-4">
+              <div class="d-flex mx-n2 mb-3">
+                <small class="mx-2"><i class="fa fa-user-alt text-primary me-2"></i>John
+                  Doe</small>
+                <small class="mx-2"><i class="fa fa-calendar-alt text-primary me-2"></i>01
+                  Jan 2025</small>
               </div>
-              <div class="p-4">
-                <div class="d-flex mx-n2 mb-3">
-                  <small class="mx-2"><i class="fa fa-user-alt text-primary me-2"></i>John
-                    Doe</small>
-                  <small class="mx-2"><i class="fa fa-calendar-alt text-primary me-2"></i>01
-                    Jan 2025</small>
-                </div>
-                <h5 class="lh-base mb-3">
-                  Affordable Luxury Suites At SOFTLIFE Luxury Hotel
-                </h5>
-                <a href="#" class="fw-medium text-uppercase">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
+              <h5 class="lh-base mb-3">
+                Affordable Luxury Suites At SOFTLIFE Luxury Hotel
+              </h5>
+              <a href="#" class="fw-medium text-uppercase">Read More <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="blog-item rounded">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/blog-2.jpg" alt="" />
-              </div>
-              <div class="p-4">
-                <div class="d-flex mx-n2 mb-3">
-                  <small class="mx-2"><i class="fa fa-user-alt text-primary me-2"></i>John
-                    Doe</small>
-                  <small class="mx-2"><i class="fa fa-calendar-alt text-primary me-2"></i>01
-                    Jan 2025</small>
-                </div>
-                <h5 class="lh-base mb-3">
-                  Affordable Luxury Suites At SOFTLIFE Luxury Hotel
-                </h5>
-                <a href="#" class="fw-medium text-uppercase">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="blog-item rounded">
+            <div class="overflow-hidden">
+              <img class="img-fluid" src="img/blog-3.jpg" alt="" />
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="blog-item rounded">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/blog-3.jpg" alt="" />
+            <div class="p-4">
+              <div class="d-flex mx-n2 mb-3">
+                <small class="mx-2"><i class="fa fa-user-alt text-primary me-2"></i>John
+                  Doe</small>
+                <small class="mx-2"><i class="fa fa-calendar-alt text-primary me-2"></i>01
+                  Jan 2025</small>
               </div>
-              <div class="p-4">
-                <div class="d-flex mx-n2 mb-3">
-                  <small class="mx-2"><i class="fa fa-user-alt text-primary me-2"></i>John
-                    Doe</small>
-                  <small class="mx-2"><i class="fa fa-calendar-alt text-primary me-2"></i>01
-                    Jan 2025</small>
-                </div>
-                <h5 class="lh-base mb-3">
-                  Affordable Luxury Suites At SOFTLIFE Luxury Hotel
-                </h5>
-                <a href="#" class="fw-medium text-uppercase">Read More <i class="bi bi-arrow-right"></i></a>
-              </div>
+              <h5 class="lh-base mb-3">
+                Affordable Luxury Suites At SOFTLIFE Luxury Hotel
+              </h5>
+              <a href="#" class="fw-medium text-uppercase">Read More <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Blog End -->
+  </div>
+  <!-- Blog End -->
 
-    <!-- Newsletter Start -->
-    <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
-      <div class="row justify-content-center">
-        <div class="col-lg-10 border rounded p-1">
-          <div class="border rounded text-center p-1">
-            <div class="bg-white rounded text-center p-5">
-              <h4 class="mb-4">
-                Subscribe Our
-                <span class="text-primary text-uppercase">Newsletter</span>
-              </h4>
-              <div class="position-relative mx-auto" style="max-width: 400px">
-                <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email" />
-                <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">
-                  Submit
-                </button>
-              </div>
+  <!-- Newsletter Start -->
+  <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 border rounded p-1">
+        <div class="border rounded text-center p-1">
+          <div class="bg-white rounded text-center p-5">
+            <h4 class="mb-4">
+              Subscribe Our
+              <span class="text-primary text-uppercase">Newsletter</span>
+            </h4>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email" />
+              <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">
+                Submit
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Newsletter Start -->
+  </div>
+  <!-- Newsletter Start -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
-      <div class="container pb-5">
-        <div class="row g-5">
-          <div class="col-md-6 col-lg-4">
-            <div class="bg-primary rounded p-4">
-              <a href="">
-                <h1 class="text-white text-uppercase mb-3">SOFTLIFE</h1>
-              </a>
-              <p class="text-white mb-0">
-                We have designed our hotel to be efficient and responsive to
-                our guests' needs. We take pride in providing top-quality
-                services and amenities.
-              </p>
-              <!-- <p class="text-white mb-0">
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+    <div class="container pb-5">
+      <div class="row g-5">
+        <div class="col-md-6 col-lg-4">
+          <div class="bg-primary rounded p-4">
+            <a href="">
+              <h1 class="text-white text-uppercase mb-3">SOFTLIFE</h1>
+            </a>
+            <p class="text-white mb-0">
+              Land, relax, and enjoy—your perfect stay starts here!
+            </p>
+            <!-- <p class="text-white mb-0">
                 Download <a class="text-dark fw-medium" href="#">SOFTLIFE –
                   Premium Version</a>, build a professional website for your hotel business and grab the attention of
                 new visitors upon your site’s launch.
               </p> -->
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <h6 class="section-title text-start text-primary text-uppercase mb-4">
-              Contact
-            </h6>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>21b Afijagba Zone A,
-              Off Gbagi International Market, Old Ife Road Ibadan.
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>08053538828, 08022730338.
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>ortimiadedunmoye@gmail.com
-            </p>
-            <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
-              <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
-              <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
-              <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-12">
-            <div class="row gy-5 g-4">
-              <div class="col-md-6">
-                <h6 class="section-title text-start text-primary text-uppercase mb-4">
-                  Company
-                </h6>
-                <a class="btn btn-link" href="#">About Us</a>
-                <a class="btn btn-link" href="#">Contact Us</a>
-                <a class="btn btn-link" href="#">Privacy Policy</a>
-                <a class="btn btn-link" href="#">Terms & Condition</a>
-                <a class="btn btn-link" href="#">Support</a>
-              </div>
-              <div class="col-md-6">
-                <h6 class="section-title text-start text-primary text-uppercase mb-4">
-                  Services
-                </h6>
-                <a class="btn btn-link" href="#">Food & Restaurant</a>
-                <!-- <a class="btn btn-link" href="#">Spa & Fitness</a> -->
-                <a class="btn btn-link" href="#">Sports & Gaming</a>
-                <a class="btn btn-link" href="#">Event & Party</a>
-                <!-- <a class="btn btn-link" href="#">GYM & Yoga</a> -->
-              </div>
-            </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy;
-              <a class="border-bottom" href="#">SOFTLIFE Luxury Hotel</a>, All
-              Right Reserved.
+        <div class="col-md-6 col-lg-3">
+          <h6 class="section-title text-start text-primary text-uppercase mb-4">
+            Contact
+          </h6>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>21b Afijagba Zone A,
+            Off Gbagi International Market, Old Ife Road Ibadan.
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>08053538828, 08022730338.
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>ortimiadedunmoye@gmail.com
+          </p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-12">
+          <div class="row gy-5 g-4">
+            <div class="col-md-6">
+              <h6 class="section-title text-start text-primary text-uppercase mb-4">
+                Company
+              </h6>
+              <a class="btn btn-link" href="#">About Us</a>
+              <a class="btn btn-link" href="#">Contact Us</a>
+              <a class="btn btn-link" href="#">Privacy Policy</a>
+              <a class="btn btn-link" href="#">Terms & Condition</a>
+              <a class="btn btn-link" href="#">Support</a>
             </div>
-            <!-- <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. Designed By <a
-                class="border-bottom" href="https://htmlcodex.com/">HTML Codex</a>
-            </div> -->
-            <div class="col-md-6 text-center text-md-end">
-              <div class="footer-menu">
-                <a href="#">Home</a>
-                <a href="#">Cookies</a>
-                <a href="#">Help</a>
-                <a href="#">FQAs</a>
-              </div>
+            <div class="col-md-6">
+              <h6 class="section-title text-start text-primary text-uppercase mb-4">
+                Services
+              </h6>
+              <a class="btn btn-link" href="#">Food & Restaurant</a>
+              <!-- <a class="btn btn-link" href="#">Spa & Fitness</a> -->
+              <a class="btn btn-link" href="#">Sports & Gaming</a>
+              <a class="btn btn-link" href="#">Event & Party</a>
+              <!-- <a class="btn btn-link" href="#">GYM & Yoga</a> -->
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer End -->
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy;
+            <a class="border-bottom" href="#">SOFTLIFE Luxury Hotel</a>, All
+            Right Reserved.
+          </div>
+          <!-- <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. Designed By <a
+                class="border-bottom" href="https://htmlcodex.com/">HTML Codex</a>
+            </div> -->
+          <div class="col-md-6 text-center text-md-end">
+            <div class="footer-menu">
+              <a href="#">Home</a>
+              <a href="#">Cookies</a>
+              <a href="#">Help</a>
+              <a href="#">FQAs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
   </div>
 
   <!-- JavaScript Libraries -->

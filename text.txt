@@ -66,13 +66,37 @@ Room Categories:
 
  **Entertainment & Connectivity** – Stay connected with free WiFi and enjoy satellite TV. 
 
-- **Swimming Pool** – Take a refreshing dip or lounge by our spacious pool.  
-
+ 
+Meeting & Events – Well-equipped spaces for business meetings and special occasions.
 - **Meeting Room** – Hold successful meetings in our well-equipped conference rooms.
 
 - **Quality Facilities** – Enjoy modern amenities designed for your comfort.
 
+______________________________________________
 
+Rooms – Comfortable and stylish spaces designed for a relaxing stay.
+
+Staff – Friendly and professional team dedicated to excellent service.
+
+Clients – Satisfied guests who enjoy a memorable experience.
+
+Food & Dining – Delicious local and international meals prepared by top chefs.
+
+Beverages & Bar – Refreshing drinks served at our inner bar, bush bar, or through room service.
+
+Bed & Bath – Cozy beds with clean linens and an en-suite bathroom for your comfort.
+
+Entertainment & Connectivity – Enjoy satellite TV and free WiFi during your stay.
+
+
+
+Spa & Wellness – Relax with soothing treatments in a serene spa environment.
+
+Swimming Pool – Unwind with a refreshing swim in a spacious pool area.
+
+Laundry Service – Hassle-free cleaning and care for your clothes.
+
+Comfort & Convenience – Stay cool with air conditioning and enjoy a private balcony.
 
  
 write the following lines for an hotel  
@@ -90,12 +114,45 @@ write the following lines for an hotel
 
 
  Price Ranges:
-- Classic: ₦25,000
-- Super Classic: ₦28,000
-- Deluxe: ₦32,000
+- Classic Room: ₦25,000
+- Super Classic Room: ₦28,000
+- Deluxe Room: ₦32,000
 - Executive Suites: ₦45,000
 
 Classic Room: A cozy and affordable option with essential amenities for a comfortable stay.
 Super Classic Room: Enjoy added comfort with upgraded features and a stylish touch.
 Deluxe Room: Spacious and elegantly furnished, offering a premium experience.
 Executive Suite: A luxurious retreat with top-tier amenities for ultimate relaxation.
+
+
+short descriptionfor the following
+
+Conference Room
+Bar
+Restaurant
+Reception
+
+Features
+
+
+Why Choose Us 
+Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+
+Relux Living
+Clita dolor sit lorem justo lorem. Diam dolore et sed erat, erat est diam dolore kasd sit sed amet sit dolor sed.
+
+High Security System
+Clita dolor sit lorem justo lorem. Diam dolore et sed erat, erat est diam dolore kasd sit sed amet sit dolor sed.
+
+24/7 Telephone Support
+Clita dolor sit lorem justo lorem. Diam dolore et sed erat, erat est diam dolore kasd sit sed amet sit dolor sed.
+
+
+
+10 more like this
+
+
+High Security System 
+24/7 Support 
+Parking Space
+Free WiFi 

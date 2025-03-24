@@ -29,3 +29,18 @@ how do I make it works
 
 gallery.html  : 
 
+
+From this fontawesome class
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css
+
+suggest one/two both suitable icon class for the word I give.
+
+e.g envelope
+fa fa-envelope 
+
+Can I start?
+
+Beverages & Bar
+Entertainment & Connectivity
+Meeting & Events
+Quality Facilities

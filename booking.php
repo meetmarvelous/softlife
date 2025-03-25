@@ -1,12 +1,83 @@
+<?php
+session_start();
+// error_reporting(0);
+include('admin/includes/config.php');
+
+$alertMessage = '';
+$alertType = ''; // 'success' or 'danger'
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  // Get form data
+  $firstname = mysqli_real_escape_string($con, $_POST['firstname']);
+  $surname = mysqli_real_escape_string($con, $_POST['surname']);
+  $phone = mysqli_real_escape_string($con, $_POST['phone']);
+  $email = mysqli_real_escape_string($con, $_POST['email']);
+  $checkin = mysqli_real_escape_string($con, $_POST['checkin']);
+  $checkout = mysqli_real_escape_string($con, $_POST['checkout']);
+  $nights = (int)$_POST['nights'];
+  $room_type = mysqli_real_escape_string($con, $_POST['room_type']);
+  $total_price = (float)str_replace(['₦', ','], '', $_POST['total_price']);
+  $message = mysqli_real_escape_string($con, $_POST['message']);
+  $status = 'unread';
+  $submitted_at = date('Y-m-d H:i:s');
+
+  // Insert data into database
+  $sql = "INSERT INTO reservation (firstname, surname, phone, email, checkin, checkout, nights, room_type, total_price, message, status, submitted_at)
+            VALUES ('$firstname', '$surname', '$phone', '$email', '$checkin', '$checkout', $nights, '$room_type', $total_price, '$message', '$status', '$submitted_at')";
+
+  if (mysqli_query($con, $sql)) {
+    $alertMessage = 'Booking submitted successfully!';
+    $alertType = 'success';
+
+    // Clear form fields
+    $_POST = array();
+  } else {
+    $alertMessage = 'Error: ' . mysqli_error($con);
+    $alertType = 'danger';
+  }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>SOFTLIFE - Hotel Homepage</title>
+  <title>SOFTLIFE Hotel | Reservation</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+
+
+  <!-- Additional meta tags for SEO -->
+  <!-- Description should highlight the hotel's luxury, affordability, and key offerings -->
+  <meta name="description"
+    content="Enjoy premium hospitality with well-furnished rooms, a bush-bar, restaurant, gym, and more at SOFT-LIFE Luxury Hotel, Ibadan.">
+
+  <!-- Keywords should focus on relevant search terms for hospitality and location -->
+  <meta name="keywords"
+    content="luxury hotel Ibadan, affordable hotel Ibadan, best hotel in Ibadan, Soft-Life Luxury Hotel, business hotel, relaxation, conference center, bush-bar, restaurant, free Wi-Fi">
+
+  <!-- Author should reflect the business name or owner -->
+  <meta name="author" content="SOFT-LIFE Luxury Hotel">
+
+  <!-- Open Graph Meta Tags -->
+  <!-- Ensure the URL points to the hotel's actual website -->
+  <meta property="og:url" content="http://softlifehotel.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SOFT-LIFE Luxury Hotel - Making Luxury Affordable">
+  <meta property="og:description"
+    content="Enjoy premium hospitality with well-furnished rooms, a bush-bar, restaurant, gym, and more at SOFT-LIFE Luxury Hotel, Ibadan.">
+  <meta property="og:image" content="http://softlifehotel.com/img/ogimage.png">
+  <meta property="og:image:alt" content="SOFT-LIFE Luxury Hotel - Premium Hospitality in Ibadan">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:creator" content="@realmarvelous">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SOFT-LIFE Luxury Hotel - Comfort & Elegance in Ibadan">
+  <meta name="twitter:description"
+    content="Book a luxurious stay at SOFT-LIFE Luxury Hotel. Well-furnished rooms, a restaurant, gym, bush-bar, free Wi-Fi, and more!">
+  <meta name="twitter:image" content="http://softlifehotel.com/img/ogimage.png">
+  <meta name="twitter:image:alt" content="Experience Comfort & Hospitality at SOFT-LIFE Luxury Hotel">
+
 
   <!-- Favicon -->
   <link href="img/favicon.html" rel="icon">
@@ -89,9 +160,9 @@
                 <a href="about.html" class="nav-item nav-link">About Us</a>
                 <!-- <a href="" class="nav-item nav-link">Services</a> -->
                 <!-- <a href="" class="nav-item nav-link">Rooms</a> -->
-                <a href="booking.html" class="nav-item nav-link">Reservation</a>
+                <a href="booking.php" class="nav-item nav-link">Reservation</a>
               </div>
-              <a href="booking.html" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Book Now<i
+              <a href="booking.php" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Book Now<i
                   class="fa fa-arrow-right ms-3"></i></a>
             </div>
           </nav>
@@ -121,6 +192,17 @@
     <!-- Booking Start -->
     <div class="container-xxl py-5">
       <div class="container">
+        <?php if ($alertMessage): ?>
+          <div class="alert alert-<?php echo $alertType; ?> alert-dismissible fade show" role="alert">
+            <?php echo $alertMessage; ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <script>
+            // Show alert message as popup
+            alert("<?php echo $alertMessage; ?>");
+          </script>
+        <?php endif; ?>
+
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
           <h6 class="section-title text-center text-primary text-uppercase">Room Booking</h6>
           <h1 class="mb-5">Book A <span class="text-primary text-uppercase">Luxury Room</span></h1>
@@ -129,62 +211,82 @@
           <div class="col-lg-1"></div>
           <div class="col-lg-10">
             <div class="wow fadeInUp" data-wow-delay="0.2s">
-              <form>
+              <form method="POST" action="">
                 <div class="row g-3">
                   <div class="col-md-6">
                     <div class="form-floating">
-                      <input type="text" class="form-control" id="firstname" placeholder="Your First Name">
-                      <label for="name">Your First Name</label>
+                      <input type="text" class="form-control" id="firstname" name="firstname"
+                        placeholder="Your First Name" value="<?php echo isset($_POST['firstname']) ? $_POST['firstname'] : ''; ?>" required>
+                      <label for="firstname">Your First Name</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-floating">
-                      <input type="text" class="form-control" id="surname" placeholder="Your Surname">
-                      <label for="name">Your Surname</label>
+                      <input type="text" class="form-control" id="surname" name="surname"
+                        placeholder="Your Surname" value="<?php echo isset($_POST['surname']) ? $_POST['surname'] : ''; ?>" required>
+                      <label for="surname">Your Surname</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-floating">
-                      <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
-                      <label for="name">Your Phone Number</label>
+                      <input type="tel" class="form-control" id="phone" name="phone"
+                        placeholder="Your Phone Number" value="<?php echo isset($_POST['phone']) ? $_POST['phone'] : ''; ?>" required>
+                      <label for="phone">Your Phone Number</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-floating">
-                      <input type="email" class="form-control" id="email" placeholder="Your Email">
+                      <input type="email" class="form-control" id="email" name="email"
+                        placeholder="Your Email" value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>" required>
                       <label for="email">Your Email</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-floating date" id="date3" data-target-input="nearest">
-                      <input type="text" class="form-control datetimepicker-input" id="checkin" placeholder="Check In"
-                        data-target="#date3" data-toggle="datetimepicker" />
+                      <input type="text" class="form-control datetimepicker-input" id="checkin" name="checkin"
+                        placeholder="Check In" data-target="#date3" data-toggle="datetimepicker"
+                        value="<?php echo isset($_POST['checkin']) ? $_POST['checkin'] : ''; ?>" required />
                       <label for="checkin">Check In</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-floating date" id="date4" data-target-input="nearest">
-                      <input type="text" class="form-control datetimepicker-input" id="checkout" placeholder="Check Out"
-                        data-target="#date4" data-toggle="datetimepicker" />
+                      <input type="text" class="form-control datetimepicker-input" id="checkout" name="checkout"
+                        placeholder="Check Out" data-target="#date4" data-toggle="datetimepicker"
+                        value="<?php echo isset($_POST['checkout']) ? $_POST['checkout'] : ''; ?>" required />
                       <label for="checkout">Check Out</label>
                     </div>
                   </div>
-                  <div class="col-12">
+                  <div class="col-md-6">
                     <div class="form-floating">
-                      <select class="form-select" id="select3">
-                        <option disabled selected>--- Select a room/suite ---</option>
-                        <option value="25000">Classic Room - ₦25,000</option>
-                        <option value="28000">Super Classic Room - ₦28,000</option>
-                        <option value="32000">Deluxe Room - ₦32,000</option>
-                        <option value="45000">Executive Suites - ₦45,000</option>
-                      </select>
-                      <label for="select3">Select A Room</label>
+                      <input type="number" class="form-control" id="nights" name="nights"
+                        placeholder="Number of Nights" value="<?php echo isset($_POST['nights']) ? $_POST['nights'] : ''; ?>" readonly>
+                      <label for="nights">Number of Nights</label>
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-floating">
-                      <textarea class="form-control" placeholder="Special Request" id="message"
-                        style="height: 100px"></textarea>
+                      <select class="form-select" id="room_type" name="room_type" required>
+                      <option disabled selected>--- Select a room/suite ---</option>
+                        <option value="25000" <?php echo (isset($_POST['room_type']) && $_POST['room_type'] == '25000') ? 'selected' : ''; ?>>Classic Room - ₦25,000</option>
+                        <option value="28000" <?php echo (isset($_POST['room_type']) && $_POST['room_type'] == '28000') ? 'selected' : ''; ?>>Super Classic Room - ₦28,000</option>
+                        <option value="32000" <?php echo (isset($_POST['room_type']) && $_POST['room_type'] == '32000') ? 'selected' : ''; ?>>Deluxe Room - ₦32,000</option>
+                        <option value="45000" <?php echo (isset($_POST['room_type']) && $_POST['room_type'] == '45000') ? 'selected' : ''; ?>>Executive Suites - ₦45,000</option>
+                      </select>
+                      <label for="room_type">Select A Room</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="total_price" name="total_price"
+                        placeholder="Total Price" value="<?php echo isset($_POST['total_price']) ? $_POST['total_price'] : ''; ?>" readonly>
+                      <label for="total_price">Total Price (₦)</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea class="form-control" placeholder="Special Request" id="message" name="message"
+                        style="height: 100px"><?php echo isset($_POST['message']) ? $_POST['message'] : ''; ?></textarea>
                       <label for="message">Special Request</label>
                     </div>
                   </div>
@@ -269,7 +371,7 @@
                   Company
                 </h6>
                 <a class="btn btn-link" href="about.html">About Us</a>
-                <a class="btn btn-link" href="booking.html">Reservation</a>
+                <a class="btn btn-link" href="booking.php">Reservation</a>
                 <a class="btn btn-link" href="#footer">Privacy Policy</a>
                 <a class="btn btn-link" href="#footer">Terms & Condition</a>
                 <a class="btn btn-link" href="#footer">Support</a>
@@ -337,7 +439,66 @@
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
-</body>
 
+  <script>
+    $(document).ready(function() {
+      // Initialize date pickers with min date set to today
+      var today = new Date();
+      $('#date3').datetimepicker({
+        format: 'L',
+        minDate: today
+      });
+      $('#date4').datetimepicker({
+        format: 'L',
+        minDate: today,
+        useCurrent: false
+      });
+
+      // Calculate nights and total price when dates or room type change
+      $('#checkin, #checkout, #room_type').change(function() {
+        calculateNightsAndPrice();
+      });
+
+      // Calculate on page load if values exist
+      if ($('#checkin').val() && $('#checkout').val()) {
+        calculateNightsAndPrice();
+      }
+
+      function calculateNightsAndPrice() {
+        var checkin = $('#checkin').val();
+        var checkout = $('#checkout').val();
+        var roomPrice = $('#room_type').val();
+
+        if (checkin && checkout) {
+          var startDate = moment(checkin, 'MM/DD/YYYY');
+          var endDate = moment(checkout, 'MM/DD/YYYY');
+
+          // Ensure checkout is after checkin
+          if (endDate.isBefore(startDate, 'day')) {
+            alert('Check-out date must be after check-in date');
+            $('#checkout').val('');
+            $('#nights').val('');
+            $('#total_price').val('');
+            return;
+          }
+
+          // Calculate nights (minimum 1 night)
+          var nights = endDate.diff(startDate, 'days');
+          nights = nights < 1 ? 1 : nights;
+
+          // Calculate total price
+          var totalPrice = nights * roomPrice;
+
+          // Format with commas
+          var formattedPrice = totalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+          // Update fields
+          $('#nights').val(nights);
+          $('#total_price').val('₦' + formattedPrice);
+        }
+      }
+    });
+  </script>
+</body>
 
 </html>

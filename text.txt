@@ -1,3 +1,21 @@
+Here is the details of my hotel, dont do anything yet
+
+⑨: 21b Afijagba Zone A, Off Gbagi International Market, Old Ife Road Ibadan.
+
+info@softlifehotel.com
+08144894289
+09135284477
+
+SOFT-LIFE Luxury Hotel, 21A Afijagba zone A, old Ife Road Gbaji Ibadan
+
+______________________________________________
+
+Welcome to SOFT-LIFE Luxury Hotel
+Built For Your Maximum Relaxation
+
+At SOFT-LIFE Luxury Hotel, our goal is to deliver excellent service with a competitive advantage. We have designed our hotel to be efficient and responsive to our guests' needs. We take pride in providing top-quality services and amenities.
+
+
 *Vision*
 To create an ambience that showcases the essence of exceptional hospitality.
 
@@ -14,22 +32,15 @@ Our mission is to fulfill the hospitality needs of our guests, providing a haven
 Ideally situated in the heart of Ibadan's business hub, our hotel is conveniently nestled between two prominent landmarks: the bustling Gbagi International Market and the Ibadan Airport 
 
 *Slogan*
-Making Luxury affordable
+Making Luxury affordable ...
 
 
 ABOUT SOFT LIFE	
-Softlife Luxury Hotels is nestled amidst the Ibadan city's secure oasis of cultural richness and ancient artifacts, offering a blend of peace, luxury, and personalized service.
+Softlife Luxury Hotel is nestled amidst the Ibadan city's secure oasis of cultural richness and ancient artifacts, offering a blend of peace, luxury, and personalized service.
 Our esteemed guests gets to enjoy well-furnished relaxation rooms, quality breakfast, a bush-bar including an indoor restaurant & bar, a conference center, gym, free parking, and Wi-Fi – all at affordable rates.
 The hotel aims to provide a memorable stay, seamlessly integrating modern comfort with the cultural essence of Ibadan City.
 Join us and discover a harmonious retreat where every moment reflects the charm of our city.
 
-OUR
-COREVALUES
-BusinessEthics
-Innovation
-Integrity
-Genuinecare
-Excellence
 ______________________________________________
 
 
@@ -90,29 +101,6 @@ Entertainment & Connectivity – Enjoy satellite TV and free WiFi during your st
 
 
 
-Spa & Wellness – Relax with soothing treatments in a serene spa environment.
-
-Swimming Pool – Unwind with a refreshing swim in a spacious pool area.
-
-Laundry Service – Hassle-free cleaning and care for your clothes.
-
-Comfort & Convenience – Stay cool with air conditioning and enjoy a private balcony.
-
- 
-write the following lines for an hotel  
-
-5678 Reservations
-4321 Check-ins
-8765 Check-outs
-234 Active Bookings
-98% Occupancy Rate
-150 VIP Guests
-75 Conference Rooms
-50+ Amenities
-120 Ongoing Room Services
-24/7 Customer Support
-
-
  Price Ranges:
 - Classic Room: ₦25,000
 - Super Classic Room: ₦28,000
@@ -125,39 +113,37 @@ Deluxe Room: Spacious and elegantly furnished, offering a premium experience.
 Executive Suite: A luxurious retreat with top-tier amenities for ultimate relaxation.
 
 
-short descriptionfor the following
 
-Conference Room
-Bar
-Restaurant
-Reception
-
-Features
+Experience relaxation at its finest with exquisite dining, a cozy ambiance, and personalized care that makes every moment special. From elegantly designed rooms to world-class service, every detail is crafted for your comfort. Unwind in our serene environment, indulge in culinary delights, and enjoy an atmosphere that feels like home, only better.
 
 
-Why Choose Us 
-Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
-
-Relux Living
-Clita dolor sit lorem justo lorem. Diam dolore et sed erat, erat est diam dolore kasd sit sed amet sit dolor sed.
-
-High Security System
-Clita dolor sit lorem justo lorem. Diam dolore et sed erat, erat est diam dolore kasd sit sed amet sit dolor sed.
-
-24/7 Telephone Support
-Clita dolor sit lorem justo lorem. Diam dolore et sed erat, erat est diam dolore kasd sit sed amet sit dolor sed.
+Use the details you have to comment this seo for header
 
 
+<!-- Additional meta tags for SEO -->
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Marvelbyte">
 
-10 more like this
+<!-- Open Graph Meta Tags -->
+<meta property="og:url" content="http://academysuitesblog.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="img/ogimage.png">
+<meta property="og:image:alt" content="">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:creator" content="@realmarvelous">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="img/ogimage.png">
+<meta name="twitter:image:alt" content="">
 
 
-High Security System 
-24/7 Support 
-Parking Space
-Free WiFi 
 
 
 info@softlifehotel.com
 08144894289
-09135224477
+09135284477

@@ -61,12 +61,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   <!-- Open Graph Meta Tags -->
   <!-- Ensure the URL points to the hotel's actual website -->
-  <meta property="og:url" content="http://softlifehotel.com/">
+  <meta property="og:url" content="https://softlifehotel.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="SOFT-LIFE Luxury Hotel - Making Luxury Affordable">
   <meta property="og:description"
     content="Enjoy premium hospitality with well-furnished rooms, a bush-bar, restaurant, gym, and more at SOFT-LIFE Luxury Hotel, Ibadan.">
-  <meta property="og:image" content="http://softlifehotel.com/img/ogimage.png">
+  <meta property="og:image" content="https://softlifehotel.com/img/ogimage.png">
   <meta property="og:image:alt" content="SOFT-LIFE Luxury Hotel - Premium Hospitality in Ibadan">
 
   <!-- Twitter Meta Tags -->
@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <meta name="twitter:title" content="SOFT-LIFE Luxury Hotel - Comfort & Elegance in Ibadan">
   <meta name="twitter:description"
     content="Book a luxurious stay at SOFT-LIFE Luxury Hotel. Well-furnished rooms, a restaurant, gym, bush-bar, free Wi-Fi, and more!">
-  <meta name="twitter:image" content="http://softlifehotel.com/img/ogimage.png">
+  <meta name="twitter:image" content="https://softlifehotel.com/img/ogimage.png">
   <meta name="twitter:image:alt" content="Experience Comfort & Hospitality at SOFT-LIFE Luxury Hotel">
 
 

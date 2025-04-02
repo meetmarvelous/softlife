@@ -28,19 +28,14 @@ how do I make it works
 
 
 gallery.html  : 
+Do this in such a way that change in date automaticaly update the number of nights even without clicking room select to update total price, make it impossible to pick previous date , and the check out dtae must be same or a future date from the check in date
+
+booking.php :
 
 
-From this fontawesome class
-https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css
 
-suggest one/two both suitable icon class for the word I give.
+Remove the calculation for the number of night, let users input the number themselves
 
-e.g envelope
-fa fa-envelope 
 
-Can I start?
+booking.php :
 
-Beverages & Bar
-Entertainment & Connectivity
-Meeting & Events
-Quality Facilities

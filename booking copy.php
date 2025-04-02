@@ -232,7 +232,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                   <div class="col-md-6">
                     <div class="form-floating">
                       <input type="number" class="form-control" id="nights" name="nights"
-                        placeholder="Number of Nights" value="<?php echo isset($_POST['nights']) ? $_POST['nights'] : ''; ?>" required min="1">
+                        placeholder="Number of Nights" value="<?php echo isset($_POST['nights']) ? $_POST['nights'] : ''; ?>" readonly>
                       <label for="nights">Number of Nights</label>
                     </div>
                   </div>
@@ -307,7 +307,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               <!-- <p class="text-white mb-0">
                 Download <a class="text-dark fw-medium" href="#">SOFTLIFE –
                   Premium Version</a>, build a professional website for your hotel business and grab the attention of
-                new visitors upon your site's launch.
+                new visitors upon your site’s launch.
               </p> -->
             </div>
           </div>
@@ -422,28 +422,46 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $('#date4').datetimepicker('minDate', e.date);
       });
 
-      // Calculate total price when nights or room type change
-      $('#nights, #room_type').change(function() {
-        calculateTotalPrice();
+      // Calculate nights and total price when dates or room type change
+      $('#checkin, #checkout, #room_type').change(function() {
+        calculateNightsAndPrice();
       });
 
       // Calculate on page load if values exist
-      if ($('#nights').val() && $('#room_type').val()) {
-        calculateTotalPrice();
+      if ($('#checkin').val() && $('#checkout').val()) {
+        calculateNightsAndPrice();
       }
 
-      function calculateTotalPrice() {
-        var nights = $('#nights').val();
+      function calculateNightsAndPrice() {
+        var checkin = $('#checkin').val();
+        var checkout = $('#checkout').val();
         var roomPrice = $('#room_type').val();
 
-        if (nights && roomPrice) {
+        if (checkin && checkout && roomPrice) {
+          var startDate = moment(checkin, 'MM/DD/YYYY');
+          var endDate = moment(checkout, 'MM/DD/YYYY');
+
+          // Ensure checkout is after or same as checkin
+          if (endDate.isBefore(startDate, 'day')) {
+            alert('Check-out date must be the same or after check-in date');
+            $('#checkout').val('');
+            $('#nights').val('');
+            $('#total_price').val('');
+            return;
+          }
+
+          // Calculate nights (minimum 1 night)
+          var nights = endDate.diff(startDate, 'days');
+          nights = nights < 1 ? 1 : nights;
+
           // Calculate total price
           var totalPrice = nights * roomPrice;
 
           // Format with commas
           var formattedPrice = totalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
-          // Update field
+          // Update fields
+          $('#nights').val(nights);
           $('#total_price').val('₦' + formattedPrice);
         }
       }

@@ -130,7 +130,7 @@ Use the details you have to comment this seo for header
 <meta property="og:type" content="website">
 <meta property="og:title" content="">
 <meta property="og:description" content="">
-<meta property="og:image" content="img/ogimage.png">
+<meta property="og:image" content="img/logo5.png">
 <meta property="og:image:alt" content="">
 
 <!-- Twitter Meta Tags -->
@@ -138,7 +138,7 @@ Use the details you have to comment this seo for header
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="img/ogimage.png">
+<meta name="twitter:image" content="img/logo5.png">
 <meta name="twitter:image:alt" content="">
 
 
